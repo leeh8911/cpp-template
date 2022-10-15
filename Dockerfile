@@ -1,4 +1,3 @@
-# our local base image
 FROM ubuntu:20.04
 
 LABEL description="Container for use with Visual Studio" 
@@ -65,3 +64,7 @@ WORKDIR /tmp/doxygen/build
 RUN cmake -G "Unix Makefiles" ..
 RUN make
 RUN make install
+
+RUN apt install -qq -y graphviz
+RUN apt-get install -qq -y npm
+RUN npm install mathjax
