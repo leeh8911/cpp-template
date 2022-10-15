@@ -2,6 +2,7 @@ Checks: '
 -*,
 clang-diagnostic-*,
 llvm-*,
+-llvm-header-guard,
 misc-*,
 -misc-const-correctness,
 -misc-unused-parameters,

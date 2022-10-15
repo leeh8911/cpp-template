@@ -6,8 +6,8 @@ set(PROJECT_NAME CPP_SLAM)
 set(TEST_NAME CPP_SLAM_TEST)
 
 # Set the C++ standard we will use
-set(CMAKE_CXX_FLAGS "-std=c++14")
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "-std=c++17")
+set(CMAKE_CXX_STANDARD 17)
 
 find_program(CLANGTIDY clang-tidy)
 if(CLANGTIDY)
